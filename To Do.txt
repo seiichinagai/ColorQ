@@ -1,0 +1,6 @@
+- Create collision detection
+- Ignore same color wall
+- Switch vehicle color
+- Destroy vehicle on collisions
+- Create color Queue
+   - Ex: R Y B -- with one letter bolded or highlighted

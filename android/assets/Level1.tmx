@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.1" orientation="orthogonal" renderorder="right-down" width="240" height="13" tilewidth="16" tileheight="16" nextobjectid="68">
+ <tileset firstgid="1" source="tileset_walls.tsx"/>
+ <tileset firstgid="1148" source="tileset_walls.tsx"/>
+ <layer name="background" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMBKEb3r/mqugGCaumqqqqqqqqqqqqqqr6+AAf6zDB
+  </data>
+ </layer>
+ <layer name="graphics" width="240" height="13">
+  <data encoding="base64" compression="zlib">
+   eJztmkEKxDAMA/Oa3fb/H9xLzgKDxCpkBnwrJjGa0NKs9T/eXS3Pf3e1rOfZ1bKez65U//T8p/Oc7nfaf7rfNtryNp1nW97a5om/GvzV3OZv2nf89fbHXw3+etcznWfb/PHXS/o8b8sP/mrw9yzwV5P2N53ntvnjr5e0v23fX+m84a8Gf73gryb9Poy/GvzVpPOAv97++Ovtf7q/t/2/wF8N/p4F/mq4v+Htj79ebssP9680+HsWt+UHfzX4O+cHWPREaQ==
+  </data>
+ </layer>
+ <objectgroup name="graywall">
+  <object id="1" x="496" y="0" width="32" height="64"/>
+  <object id="2" x="496" y="144" width="32" height="64"/>
+  <object id="7" x="688" y="0" width="32" height="128"/>
+  <object id="8" x="880" y="0" width="32" height="16"/>
+  <object id="9" x="880" y="96" width="32" height="112"/>
+  <object id="10" x="1264" y="0" width="32" height="16"/>
+  <object id="11" x="1264" y="96" width="32" height="112"/>
+  <object id="12" x="1456" y="0" width="32" height="96"/>
+  <object id="13" x="1456" y="176" width="32" height="32"/>
+  <object id="14" x="1840" y="0" width="32" height="32"/>
+  <object id="15" x="1840" y="112" width="32" height="96"/>
+  <object id="16" x="2032" y="0" width="32" height="80"/>
+  <object id="18" x="2032" y="160" width="32" height="48"/>
+  <object id="19" x="2416" y="0" width="32" height="48"/>
+  <object id="21" x="2416" y="160" width="32" height="48"/>
+  <object id="22" x="2800" y="0" width="32" height="48"/>
+  <object id="23" x="2800" y="160" width="32" height="48"/>
+ </objectgroup>
+ <objectgroup name="redwall">
+  <object id="24" x="496" y="64" width="32" height="80"/>
+  <object id="26" x="688" y="128" width="32" height="80"/>
+  <object id="29" x="880" y="16" width="32" height="80"/>
+  <object id="30" x="2224" y="0" width="32" height="208"/>
+  <object id="33" x="2416" y="48" width="32" height="112"/>
+  <object id="34" x="3184" y="0" width="32" height="208"/>
+ </objectgroup>
+ <objectgroup name="yellowwall">
+  <object id="36" x="1072" y="0" width="32" height="208"/>
+  <object id="41" x="1264" y="16" width="32" height="80"/>
+  <object id="42" x="1456" y="96" width="32" height="80"/>
+  <object id="43" x="2608" y="0" width="32" height="208"/>
+  <object id="44" x="2800" y="48" width="32" height="112"/>
+  <object id="46" x="3568" y="0" width="32" height="208"/>
+ </objectgroup>
+ <objectgroup name="bluewall">
+  <object id="57" x="1648" y="0" width="32" height="208"/>
+  <object id="58" x="1840" y="32" width="32" height="80"/>
+  <object id="59" x="2032" y="80" width="32" height="80"/>
+  <object id="60" x="2992" y="0" width="32" height="208"/>
+  <object id="61" x="3376" y="0" width="32" height="208"/>
+ </objectgroup>
+</map>
