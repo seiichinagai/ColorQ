@@ -45,10 +45,11 @@ public class B2WorldCreator {
 		}
 		
 		// create blue wall bodies/fixtures
-		for(MapObject object : map.getLayers().get(5).getObjects().getByType(RectangleMapObject.class)){
+		/*for(MapObject object : map.getLayers().get(5).getObjects().getByType(RectangleMapObject.class)){
 			Rectangle rect = ((RectangleMapObject) object).getRectangle();
 			
 			new BlueWall(world, map, rect);
+<<<<<<< HEAD
 		}
 
 		// create bubble bodies/fixtures
@@ -56,6 +57,8 @@ public class B2WorldCreator {
 			Rectangle rect = ((RectangleMapObject) object).getRectangle();
 
 			new Bubble(world, map, rect);
+=======
+>>>>>>> d7ad858b52dc63e03870a60a66863d989ffbfd56
 		}*/
 	}
 	
