@@ -7,6 +7,12 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.mygdx.game.ColorQ;
 
 public class YellowWall extends InteractiveTileObject{
+	/**
+	 * Constructor
+	 * @param world
+	 * @param map
+	 * @param bounds
+	 */
 	public YellowWall(World world, TiledMap map, Rectangle bounds){
 		super(world, map, bounds);
 		fixture.setUserData(this);
@@ -14,6 +20,11 @@ public class YellowWall extends InteractiveTileObject{
 		
 	}
 
+	/**
+	 * onHeadHit displays a collision message in the console
+	 * if the ship color matches the Tiled Map Object color, destroy the object
+	 * otherwise the player is killed
+	 */
 	@Override
 	public void onHeadHit() {
 		Gdx.app.log("Yellow Wall", "Collision");

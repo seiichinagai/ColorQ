@@ -10,6 +10,12 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.mygdx.game.ColorQ;
 
 public class GrayWall extends InteractiveTileObject{
+	/**
+	 * Constructor
+	 * @param world
+	 * @param map
+	 * @param bounds
+	 */
 	public GrayWall(World world, TiledMap map, Rectangle bounds){
 		super(world, map, bounds);
 		fixture.setUserData(this);
@@ -17,6 +23,10 @@ public class GrayWall extends InteractiveTileObject{
 		
 	}
 
+	/**
+	 * onHeadHit displays a collision message in the console
+	 * if the ship collides with the gray wall, it is killed
+	 */
 	@Override
 	public void onHeadHit() {
 		// TODO Auto-generated method stub

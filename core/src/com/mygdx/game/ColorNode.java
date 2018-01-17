@@ -2,6 +2,10 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
+/**
+ * ColorNode is a node that is used in the ShipQueue
+ * The node contains a next reference, an TextureRegion: element and a String: color.
+ */
 public class ColorNode {
 	private ColorNode next;
 	private TextureRegion element;

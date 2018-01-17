@@ -33,7 +33,7 @@ public class ColorShip extends Sprite{
 	
 	private static boolean isDead = false;
 	private static boolean wins = false;
-	
+
 	public ColorShip(World world, PlayScreen screen){
 		redNode = new ColorNode(redShip, "RED");
 		yellowNode = new ColorNode(yellowShip, "YELLOW");
@@ -81,10 +81,14 @@ public class ColorShip extends Sprite{
 	public static void setWins(boolean winss){
 		wins = winss;
 	}
+
+	public static void setDead(boolean isDeadd) {
+		isDead = isDeadd;
+	}
 	
 	public void defineShip(){
 		BodyDef bdef = new BodyDef();
-		bdef.position.set(100 / ColorQ.PPM, 100 / ColorQ.PPM);
+		bdef.position.set(100 / ColorQ.PPM, 100 / ColorQ.PPM + 0.05f);
 		bdef.type = BodyDef.BodyType.DynamicBody;
 		b2body = world.createBody(bdef);
 		
@@ -93,7 +97,7 @@ public class ColorShip extends Sprite{
 		shape.setRadius(5 / ColorQ.PPM);
 		fdef.filter.categoryBits = ColorQ.SHIP_BIT;
 		fdef.filter.maskBits = ColorQ.DEFAULT_BIT | ColorQ.RED_WALL_BIT | ColorQ.GRAY_WALL_BIT | ColorQ.YELLOW_WALL_BIT
-				| ColorQ.BLUE_WALL_BIT;
+				| ColorQ.BLUE_WALL_BIT | ColorQ.BUBBLE_BIT;
 		
 		fdef.shape = shape;
 		b2body.createFixture(fdef);
@@ -110,9 +114,5 @@ public class ColorShip extends Sprite{
 	public void hit(){
 		setDead(true);
 		
-	}
-
-	public static void setDead(boolean isDeadd) {
-		isDead = isDeadd;
 	}
 }

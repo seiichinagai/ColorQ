@@ -26,7 +26,11 @@ public class Hud implements Disposable{
 	Label pointsLabel;
 	Label colorLabel[] = new Label[3];
 	Label changeColorLabel;
-	
+
+	/**
+	 * Hud contains the visual labels like level, points, time, etc.
+	 * @param sb
+	 */
 	public Hud(SpriteBatch sb){
 		worldTimer = 300;
 		timeCount = 0;
@@ -55,10 +59,10 @@ public class Hud implements Disposable{
 		
 		table.add(worldLabel).expandX().padTop(10);
 		
-		for(Label l : colorLabel)
-			table.add(l).expandX().padTop(10);
+		//for(Label l : colorLabel)
+		//table.add(l).expandX().padTop(10);
 		
-		tableBottom.add(changeColorLabel);
+		//tableBottom.add(changeColorLabel);
 		
 		//table.add(pointsLabel).expandX().padTop(10);
 		//table.row();

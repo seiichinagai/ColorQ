@@ -38,13 +38,16 @@ public abstract class InteractiveTileObject {
 		fdef.shape = shape;
 		fixture = body.createFixture(fdef);
 	}
-	
+
 	public abstract void onHeadHit();
-	
+
+	/**
+	 * Sets an acceptable collision bit
+	 * @param filterBit
+	 */
 	public void setCategoryFilter(short filterBit){
 		Filter filter = new Filter();
 		filter.categoryBits = filterBit;
 		fixture.setFilterData(filter);
-		
 	}
 }

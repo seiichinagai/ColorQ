@@ -9,12 +9,23 @@ import com.mygdx.game.ColorQ;
 import com.mygdx.game.sprites.ColorShip;
 
 public class BlueWall extends InteractiveTileObject{
+	/**
+	 * Constructor
+	 * @param world
+	 * @param map
+	 * @param bounds
+	 */
 	public BlueWall(World world, TiledMap map, Rectangle bounds){
 		super(world, map, bounds);
 		fixture.setUserData(this);
-		setCategoryFilter(ColorQ.RED_WALL_BIT);
+		setCategoryFilter(ColorQ.BLUE_WALL_BIT);
 	}
 
+	/**
+	 * onHeadHit displays a collision message in the console
+	 * if the ship color matches the Tiled Map Object color, destroy the object
+	 * otherwise the player is killed
+	 */
 	@Override
 	public void onHeadHit() {
 		Gdx.app.log("Blue Wall", "Collision");

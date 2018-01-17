@@ -1,6 +1,8 @@
 package com.mygdx.game;
 
-
+/**
+ * Data structure underlying the changing ship color
+ */
 public class ShipQueue {
 	private ColorNode head;
 	private ColorNode current;

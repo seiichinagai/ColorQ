@@ -21,14 +21,22 @@ public class GameOverScreen implements Screen{
 	private Stage stage;
 	
 	private Game game;
-	
+
+	/**
+	 * GameOverScreen occurs when the player crashes
+	 * @param game
+	 */
+
 	public GameOverScreen(Game game){
 		this.game = game;
 		viewport = new FitViewport(ColorQ.V_WIDTH, ColorQ.V_HEIGHT, new OrthographicCamera());
 		stage = new Stage(viewport, ((ColorQ) game).batch);
 		
 		Label.LabelStyle font = new Label.LabelStyle(new BitmapFont(), Color.WHITE);
-		
+
+		/*
+		Game Over HUD
+		 */
 		Table table = new Table();
 		table.center();
 		table.setFillParent(true);
@@ -52,7 +60,7 @@ public class GameOverScreen implements Screen{
 
 	@Override
 	public void render(float delta) {
-		// TODO Auto-generated method stub
+		// Reset Game
 		if(Gdx.input.justTouched() || Gdx.input.isKeyJustPressed(Input.Keys.ANY_KEY)) {
             game.setScreen(new PlayScreen((ColorQ) game));
             ColorShip.setDead(false);

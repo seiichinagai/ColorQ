@@ -19,14 +19,19 @@ import com.mygdx.game.sprites.ColorShip;
 public class WinScreen implements Screen{
 	private Viewport viewport;
 	private Stage stage;
-	
+
 	private Game game;
-	
+
+	/**
+	 * WinScreen appears when the player completes the level, letting them know that they won
+	 * @param game
+	 */
 	public WinScreen(Game game){
 		this.game = game;
 		viewport = new FitViewport(ColorQ.V_WIDTH, ColorQ.V_HEIGHT, new OrthographicCamera());
 		stage = new Stage(viewport, ((ColorQ) game).batch);
-		
+
+		// Win Screen HUD
 		Label.LabelStyle font1 = new Label.LabelStyle(new BitmapFont(), Color.BLACK);
 		Label.LabelStyle fontR = new Label.LabelStyle(new BitmapFont(), Color.RED);
 		Label.LabelStyle fontY = new Label.LabelStyle(new BitmapFont(), Color.YELLOW);
@@ -68,7 +73,7 @@ public class WinScreen implements Screen{
 
 	@Override
 	public void render(float delta) {
-		// TODO Auto-generated method stub
+		// Reset Game
 		if(Gdx.input.justTouched() || Gdx.input.isKeyJustPressed(Input.Keys.ANY_KEY)) {
             game.setScreen(new PlayScreen((ColorQ) game));
             ColorShip.setWins(false);

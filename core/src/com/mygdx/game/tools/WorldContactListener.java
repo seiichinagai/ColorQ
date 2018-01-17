@@ -9,6 +9,10 @@ import com.mygdx.game.sprites.InteractiveTileObject;
 
 public class WorldContactListener implements ContactListener{
 
+	/**
+	 * beginContact determines which fixture in collision is player
+	 * @param contact
+	 */
 	@Override
 	public void beginContact(Contact contact) {
 		Fixture fixA = contact.getFixtureA();

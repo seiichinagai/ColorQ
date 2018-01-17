@@ -2,6 +2,7 @@ package com.mygdx.game.tools;
 
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
+import com.badlogic.gdx.maps.objects.CircleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.physics.box2d.Body;
@@ -10,6 +11,7 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.mygdx.game.sprites.BlueWall;
+import com.mygdx.game.sprites.Bubble;
 import com.mygdx.game.sprites.GrayWall;
 import com.mygdx.game.sprites.RedWall;
 import com.mygdx.game.sprites.YellowWall;
@@ -29,7 +31,7 @@ public class B2WorldCreator {
 		}
 		
 		// create red wall bodies/fixtures
-		for(MapObject object : map.getLayers().get(3).getObjects().getByType(RectangleMapObject.class)){
+		for(MapObject object : map.getLayers().get(6).getObjects().getByType(RectangleMapObject.class)){
 			Rectangle rect = ((RectangleMapObject) object).getRectangle();
 			
 			new RedWall(world, map, rect);
@@ -48,6 +50,13 @@ public class B2WorldCreator {
 			
 			new BlueWall(world, map, rect);
 		}
+
+		// create bubble bodies/fixtures
+		/*for(MapObject object : map.getLayers().get(3).getObjects().getByType(RectangleMapObject.class)){
+			Rectangle rect = ((RectangleMapObject) object).getRectangle();
+
+			new Bubble(world, map, rect);
+		}*/
 	}
 	
 }
