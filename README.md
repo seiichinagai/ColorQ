@@ -1,4 +1,7 @@
-ColorQ is a minimalistic side scroller game written in Java where the player matches the color of their ship
+ColorQ
+======
+
+A minimalistic side scroller game written in Java where the player matches the color of their ship
 to the color of the oncoming wall, in order to pass through.
 
 The game was built using LibGDX and Android studio. This structure of this program was based off of Brent Aurelli's Super Mario tutorial (https://github.com/BrentAureli/SuperMario).
