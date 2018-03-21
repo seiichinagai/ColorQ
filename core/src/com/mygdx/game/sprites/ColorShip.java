@@ -97,7 +97,7 @@ public class ColorShip extends Sprite{
 		shape.setRadius(5 / ColorQ.PPM);
 		fdef.filter.categoryBits = ColorQ.SHIP_BIT;
 		fdef.filter.maskBits = ColorQ.DEFAULT_BIT | ColorQ.RED_WALL_BIT | ColorQ.GRAY_WALL_BIT | ColorQ.YELLOW_WALL_BIT
-				| ColorQ.BLUE_WALL_BIT | ColorQ.BUBBLE_BIT;
+				| ColorQ.BLUE_WALL_BIT; // Removed ColorQ.BUBBLE_BIT
 		
 		fdef.shape = shape;
 		b2body.createFixture(fdef);

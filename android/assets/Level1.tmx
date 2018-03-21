@@ -4,12 +4,12 @@
  <tileset firstgid="1148" source="tileset_walls.tsx"/>
  <layer name="background" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJztzjENAAAIA7AdmMG/QQwggJAe/VtJCgAAAABY9YEDAAAAAAAAwAcDY6cw5g==
+   eJztzqEBACAMA7CKPQP/H4jBMYEDERGfSlIAAAAAQGt8cABOc3v9AAAAAAAA4N4CEzcxMg==
   </data>
  </layer>
  <layer name="graphics" width="240" height="13">
   <data encoding="base64" compression="zlib">
-   eJztWkuuwzAI9CK9SpJ3/wtWXVjys/iNDTVpsmDRiGAYM4DdvEopr0Xyl0z/SObPmcyf/eL4o3ii8aL20XizSbZ8Q/HMlm/Z8LwSf7dGRuN9+Ourfzf+RvP9V/m7Mb8f/vrib9WvdXQv/+uqJsek/rfyzUs/mr9WfQpPy3to/lP4cGvV/InE/+r8jajnM/PPbP/V8s6zX1Bylth6EsHf1s+Dee61Xz2e2hpt/Z/ZLy//s4k3f3ucV8zP0l5z/nPvIP2C0tdyD9X35m+/FloPZ/hr4eQO6nvwF6m/0aLNn7W+We1J/KXsrDp/cTFJfKfeQfuF1q8l/c2wjoWP1P5yguIjnV8s+3UWOT4tXrQeovlGncM1QdbzlorP7LzHvbvy/sSSn9y9CZUPHvOwNG9b/Of4y9nwmn8s9VDDp43X6o8UL/UcnWfQ80I2QesbhefIvIrmz6j9kfuu9jnaL7zvx3o/PfbLE3/rvF2fe/7/i84zUj2/Inc/IvVTSz3X4l7N31H7fX+M8seaz9UH9DyY4f6BqodWQc8L0jxD+XYIulcQtH/156lZ+7P5E20/0/cbPf4Z8NHqv3QesUjE/0f9PIbYzyZ3+37g+f5qLf4Z+DsTbza5W/48/F2L/y/y9w1PK1oM
+   eJztWkGOwzAIzKVfabL9/wOrPVSykIEZG2LS5oDUWoTg8QzGSR7btj0W2V8x/71YPkexfJ4Xx5/Fk50vG5+dbzWrxjcWz2p8q4bnlfT7amx0vrd+Y/1/Tb/Zev9W/ba6bX/f+o3FH/Fv6+hT/PdsD/A/g29R/tn6Rfw1PJH4LP8lPtq6tfzJxP/q+s2o5zP1c3b/PUO/Vj05lPGofKL1K/PblfGo9TqMe2v5o7VZW6/I/KtZtH4lxiv0O6IX7TpPv56/lw/rn6FfDU9EN7P6ZfI/S79Mvcg2r//81Dc0nqXf3pxXnL8s7L31ktfN6pGJj+zZmh699dVsBB/r/OKtl+xPPH+p3xH8Gb4xZ7cKGv/gM3N+tK5d+fwE4afMW/5n+z1rf+/xw+Jz716IfhF/Fn+kHlr4yPmy/LTWrDX0fM3mX9UkPiP13/Jfrd+R/aKnX3Rdz36fMrpfR+GPnF/asaj3v9qctf7c6zeuqN1/886Dkh8af9j4UfzJit/bHzPyQfis4Y/kteL9XZuX1c8gZu0XPfP6cznOPm+vZox+X1v/PDUSP4o/2fErfb8h8a+AD8KfGTwz3h/JfoyJX81+7fuB+/urtfhX0O/MfKvZr/Hn1u9a/L9Rv2+IaIOW
   </data>
  </layer>
  <objectgroup name="graywall">
@@ -31,7 +31,7 @@
   <object id="22" x="2800" y="0" width="16" height="48"/>
   <object id="23" x="2800" y="160" width="16" height="48"/>
  </objectgroup>
- <objectgroup name="bubble">
+ <objectgroup name="bubble" visible="0">
   <object id="294" x="371.513" y="99.4776" width="9.16972" height="8.61398"/>
   <object id="295" x="387.49" y="100.172" width="9.16972" height="8.61398"/>
   <object id="296" x="404.163" y="101.006" width="9.16972" height="8.61398"/>

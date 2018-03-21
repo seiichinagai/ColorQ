@@ -22,7 +22,7 @@ public class ColorQ extends Game {
 	public static final short YELLOW_WALL_BIT = 16;
 	public static final short BLUE_WALL_BIT = 32;
 	public static final short DESTROYED_BIT = 64;
-	public static final short BUBBLE_BIT = 128;
+	//public static final short BUBBLE_BIT = 128;
 
 	public SpriteBatch batch;
 	public static AssetManager manager;
@@ -35,7 +35,7 @@ public class ColorQ extends Game {
 		batch = new SpriteBatch();
 		manager = new AssetManager();
 		manager.load("audio/colorQ_music.ogg", Music.class);
-		manager.load("audio/pop.ogg", Sound.class);
+		//manager.load("audio/pop.ogg", Sound.class);
 
 		manager.finishLoading();
 		

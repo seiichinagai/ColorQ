@@ -21,7 +21,7 @@ public class Bubble extends InteractiveTileObject{
     public Bubble(World world, TiledMap map, Rectangle rect){
         super(world, map, rect);
         fixture.setUserData(this);
-        setCategoryFilter(ColorQ.BUBBLE_BIT);
+        //setCategoryFilter(ColorQ.BUBBLE_BIT);
 
     }
 
@@ -31,8 +31,8 @@ public class Bubble extends InteractiveTileObject{
      */
     @Override
     public void onHeadHit() {
-        Gdx.app.log("Bubble", "Collision");
+        /*Gdx.app.log("Bubble", "Collision");
         setCategoryFilter(ColorQ.DESTROYED_BIT);
-        ColorQ.manager.get("audio/pop.ogg", Sound.class).play();
+        ColorQ.manager.get("audio/pop.ogg", Sound.class).play();*/
     }
 }

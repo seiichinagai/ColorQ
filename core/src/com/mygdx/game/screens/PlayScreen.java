@@ -53,7 +53,7 @@ public class PlayScreen implements Screen{
 	private ColorShip player;
 	
 	private Music music;
-	private Sound pop;
+	//private Sound pop;
 
 	/**
 	 * PlayScreen is the screen where the user interacts with the game
@@ -84,11 +84,11 @@ public class PlayScreen implements Screen{
 		world.setContactListener(new WorldContactListener());
 
 		// Sounds
-		pop = ColorQ.manager.get("audio/pop.ogg", Sound.class);
+		//pop = ColorQ.manager.get("audio/pop.ogg", Sound.class);
 
 		music = ColorQ.manager.get("audio/colorQ_music.ogg", Music.class);
         music.setLooping(true);
-        music.setVolume(0.5f);
+        music.setVolume(0.75f);
         music.play();
 
         batch = new SpriteBatch();

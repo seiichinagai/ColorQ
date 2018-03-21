@@ -20,12 +20,12 @@ public class GrayWall extends InteractiveTileObject{
 		super(world, map, bounds);
 		fixture.setUserData(this);
 		setCategoryFilter(ColorQ.GRAY_WALL_BIT);
-		
 	}
 
 	/**
 	 * onHeadHit displays a collision message in the console
-	 * if the ship collides with the gray wall, it is killed
+	 * if the ship color matches the Tiled Map Object color, destroy the object
+	 * otherwise the player is killed
 	 */
 	@Override
 	public void onHeadHit() {
