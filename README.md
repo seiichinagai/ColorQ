@@ -6,6 +6,8 @@ ColorQ
 A minimalistic side scroller game written in Java where the player matches the color of their ship
 to the color of the oncoming wall, in order to pass through.
 
+Up and down keys control direction and space bar changes color.
+
 The game was built using LibGDX and Android studio. This structure of this program was based off of Brent Aurelli's Super Mario tutorial (https://github.com/BrentAureli/SuperMario).
 
 As stated above, the point of the game is to match your ship color to the wall in order to pass through it.
